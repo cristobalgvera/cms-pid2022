@@ -1,0 +1,30 @@
+{
+  "name": "cms-pid-2022",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CMS for PID project",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.4.6",
+    "@strapi/plugin-users-permissions": "4.4.6",
+    "@strapi/plugin-i18n": "4.4.6",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "cristobalgvera"
+  },
+  "strapi": {
+    "uuid": "4e1fc1db-ae55-40a9-b7f5-2f57b734955c"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
