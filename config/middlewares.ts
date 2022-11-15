@@ -1,15 +1,14 @@
 export default ({ env }) => [
   "strapi::errors",
-  // S3 related security settings
+  // Files related security settings
   {
     name: "strapi::security",
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", `${env("CDN_BASE_URL")}`],
-          "media-src": ["'self'", "data:", "blob:", `${env("CDN_BASE_URL")}`],
+          "default-src": ["'self'"],
+          "img-src": ["'self'", "data:", "blob:", env("SUPABASE_API_URL")],
           upgradeInsecureRequests: null,
         },
       },
