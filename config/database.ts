@@ -12,7 +12,7 @@ export default ({ env }) => ({
       schema: env("DATABASE_SCHEMA", "public"), // Not required
       ssl: {
         // From ./dist folder
-        ca: fs.readFileSync(`${__dirname}/../../ssl/ca-certificate-2021.crt`).toString(),
+        ca: fs.readFileSync(`${__dirname}/../../ca-certificate-2021.crt`).toString(),
       }
     },
     debug: false,
