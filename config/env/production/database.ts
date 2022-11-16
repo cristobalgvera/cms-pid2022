@@ -12,10 +12,17 @@ export default ({ env }) => ({
       password: env("DATABASE_PASSWORD"),
       schema: env("DATABASE_SCHEMA"),
       ssl: {
-        // From ./dist folder
+        // From ./dist/config/env/production folder
         ca: fs
           .readFileSync(
-            path.join(__dirname, "..", "..", "ca-certificate-2021.crt")
+            path.join(
+              __dirname,
+              "..",
+              "..",
+              "..",
+              "..",
+              "ca-certificate-2021.crt"
+            )
           )
           .toString(),
       },
