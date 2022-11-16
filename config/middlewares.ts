@@ -1,19 +1,6 @@
-export default ({ env }) => [
+export default [
   "strapi::errors",
-  // Files related security settings
-  {
-    name: "strapi::security",
-    config: {
-      contentSecurityPolicy: {
-        useDefaults: true,
-        directives: {
-          "default-src": ["'self'"],
-          "img-src": ["'self'", "data:", "blob:", env("SUPABASE_API_URL")],
-          upgradeInsecureRequests: null,
-        },
-      },
-    },
-  },
+  "strapi::security",
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
