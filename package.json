@@ -21,7 +21,7 @@
     "strapi-provider-upload-supabase-v4": "1.0.15"
   },
   "author": {
-    "name": "cristobalgvera"
+    "name": "Cristóbal Gajardo Vera <cristobalgajardo.v@gmail.com>"
   },
   "strapi": {
     "uuid": "4e1fc1db-ae55-40a9-b7f5-2f57b734955c"
