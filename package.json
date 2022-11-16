@@ -10,15 +10,15 @@
     "strapi": "strapi"
   },
   "devDependencies": {
-    "better-sqlite3": "^7.6.2"
+    "better-sqlite3": "7.6.2"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "4.4.6",
-    "@strapi/plugin-i18n": "4.4.6",
-    "@strapi/plugin-users-permissions": "4.4.6",
-    "@strapi/strapi": "4.4.6",
-    "pg": "^8.8.0",
-    "strapi-provider-upload-supabase-v4": "^1.0.15"
+    "@strapi/plugin-graphql": "4.5.0",
+    "@strapi/plugin-i18n": "4.5.0",
+    "@strapi/plugin-users-permissions": "4.5.0",
+    "@strapi/strapi": "4.5.0",
+    "pg": "8.8.0",
+    "strapi-provider-upload-supabase-v4": "1.0.15"
   },
   "author": {
     "name": "cristobalgvera"
