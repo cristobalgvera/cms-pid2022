@@ -12,19 +12,7 @@ export default ({ env }) => ({
       password: env("DATABASE_PASSWORD"),
       schema: env("DATABASE_SCHEMA"),
       ssl: {
-        // From ./dist/config/env/production folder
-        ca: fs
-          .readFileSync(
-            path.join(
-              __dirname,
-              "..",
-              "..",
-              "..",
-              "..",
-              "ca-certificate-2021.crt"
-            )
-          )
-          .toString(),
+        ca: Buffer.from(env("DATABASE_SSL_CA"), "base64").toString("ascii"),
       },
     },
     debug: false,
