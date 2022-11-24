@@ -20,6 +20,7 @@
     "@strapi/plugin-users-permissions": "4.5.0",
     "@strapi/strapi": "4.5.0",
     "pg": "8.8.0",
+    "strapi-plugin-duplicate-button": "^1.0.4",
     "strapi-provider-upload-supabase-v4": "1.0.15"
   },
   "author": {
