@@ -1593,6 +1593,13 @@
   resolved "https://registry.yarnpkg.com/@open-draft/until/-/until-1.0.3.tgz#db9cc719191a62e7d9200f6e7bab21c5b848adca"
   integrity sha512-Aq58f5HiWdyDlFffbbSjAlv596h/cOnt2DO1w3DOC7OJ5EHs0hd/nycJfiu9RJbT6Yk6F1knnRRXNSpxoIVZ9Q==
 
+"@palmabit/strapi-app-version@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@palmabit/strapi-app-version/-/strapi-app-version-1.1.0.tgz#2d5ab0dfe802fee79a8dcbe31c2c5987d8c700a3"
+  integrity sha512-XpMJoBudcUMkMNJjiZKEYF+IHTOpTZ1TKfe6SlPMREK3m5hGqVvkAZIJwlmhC4dR9o8huRvjIlGaiFAuNpijKw==
+  dependencies:
+    app-root-path "^3.1.0"
+
 "@pmmmwh/react-refresh-webpack-plugin@0.5.7":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.7.tgz#58f8217ba70069cc6a73f5d7e05e85b458c150e2"
@@ -3115,6 +3122,11 @@ apollo-server-types@^3.1.1, apollo-server-types@^3.6.2, apollo-server-types@^3.7
     "@apollo/utils.logger" "^1.0.0"
     apollo-reporting-protobuf "^3.3.3"
     apollo-server-env "^4.2.1"
+
+app-root-path@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-3.1.0.tgz#5971a2fc12ba170369a7a1ef018c71e6e47c2e86"
+  integrity sha512-biN3PwB2gUtjaYy/isrU3aNWI5w+fAfvHkSvCKeQGxhmYpwKFUxudR3Yya+KqVRHBmEDYh+/lTozYCFbmzX4nA==
 
 argparse@^2.0.1:
   version "2.0.1"
