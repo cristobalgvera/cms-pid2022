@@ -1,6 +1,6 @@
-import { configCkeditor, configUploadProvider } from "../../plugin-settings";
+import { commonPlugins, configUploadProvider } from "../../plugin-settings";
 
 export default ({ env }) => ({
+  ...commonPlugins(),
   upload: configUploadProvider(env),
-  ckeditor: configCkeditor(),
 });

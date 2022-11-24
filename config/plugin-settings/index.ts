@@ -1,2 +1,3 @@
-export * from './ckeditor'
+export * from './common-plugins'
 export * from './upload-provider'
+
