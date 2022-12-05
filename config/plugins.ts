@@ -1,6 +1,5 @@
-import { commonPlugins, configUploadProvider } from "./plugin-settings";
+import { commonPlugins } from "./plugin-settings";
 
-export default ({ env }) => ({
+export default () => ({
   ...commonPlugins(),
-  ...configUploadProvider(env),
 });

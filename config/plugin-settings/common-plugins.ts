@@ -1,8 +1,9 @@
 import { configCkeditor } from "./ckeditor";
+import { configDuplicateButton } from "./duplicate-button";
 
 export function commonPlugins() {
   return {
-    ckeditor: configCkeditor(),
-    "duplicate-button": true,
+    ...configDuplicateButton(),
+    ...configCkeditor(),
   };
 }
