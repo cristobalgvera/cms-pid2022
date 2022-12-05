@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "chapters",
+  "collectionName": "subtopics",
   "info": {
-    "singularName": "chapter",
-    "pluralName": "chapters",
-    "displayName": "Chapter"
+    "singularName": "subtopic",
+    "pluralName": "subtopics",
+    "displayName": "Subtopic"
   },
   "options": {
     "draftAndPublish": true
@@ -13,18 +13,17 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
-    "description": {
+    "content": {
       "type": "richtext",
       "required": true
     },
-    "topics": {
+    "topic": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::topic.topic",
-      "mappedBy": "chapter"
+      "inversedBy": "subtopics"
     }
   }
 }
