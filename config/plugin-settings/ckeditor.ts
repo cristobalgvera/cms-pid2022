@@ -7,8 +7,9 @@ export function configCkeditor() {
           toolbar: {
             items: [
               "paragraph",
-              "heading1",
               "heading2",
+              "heading3",
+              "heading4",
               "|",
               "bulletedList",
               "todoList",
@@ -35,7 +36,6 @@ export function configCkeditor() {
               "strikethrough",
               "specialCharacters",
               "|",
-              "heading",
               "fullScreen",
               "undo",
               "redo",
