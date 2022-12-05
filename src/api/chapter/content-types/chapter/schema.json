@@ -4,27 +4,25 @@
   "info": {
     "singularName": "chapter",
     "pluralName": "chapters",
-    "displayName": "Chapter"
+    "displayName": "Chapter",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "topics": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::topic.topic",
       "mappedBy": "chapter"
+    },
+    "entry": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tutorial.blog-entry",
+      "required": true
     }
   }
 }

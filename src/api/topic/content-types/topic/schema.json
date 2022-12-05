@@ -4,7 +4,7 @@
   "info": {
     "singularName": "topic",
     "pluralName": "topics",
-    "displayName": "topic",
+    "displayName": "Topic",
     "description": ""
   },
   "options": {
@@ -12,15 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
-      "unique": false
-    },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "chapter": {
       "type": "relation",
       "relation": "manyToOne",
@@ -32,6 +23,11 @@
       "relation": "oneToMany",
       "target": "api::subtopic.subtopic",
       "mappedBy": "topic"
+    },
+    "entry": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tutorial.blog-entry"
     }
   }
 }
