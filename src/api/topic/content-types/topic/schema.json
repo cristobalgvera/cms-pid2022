@@ -24,10 +24,24 @@
       "target": "api::subtopic.subtopic",
       "mappedBy": "topic"
     },
-    "entry": {
-      "type": "component",
-      "repeatable": false,
-      "component": "tutorial.blog-entry"
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "summary": {
+      "type": "text",
+      "maxLength": 255
     }
   }
 }
