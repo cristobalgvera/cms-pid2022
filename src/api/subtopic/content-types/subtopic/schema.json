@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "topic": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::topic.topic",
-      "inversedBy": "subtopics"
-    },
     "title": {
       "type": "string",
       "required": true
@@ -36,6 +30,12 @@
     "summary": {
       "type": "text",
       "maxLength": 255
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topic.topic",
+      "inversedBy": "subtopics"
     }
   }
 }

@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "topics": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::topic.topic",
-      "mappedBy": "chapter"
-    },
     "title": {
       "type": "string",
       "required": true
@@ -37,6 +31,12 @@
     "summary": {
       "type": "text",
       "maxLength": 255
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic",
+      "mappedBy": "chapter"
     }
   }
 }

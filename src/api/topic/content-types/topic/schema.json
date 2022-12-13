@@ -12,6 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "summary": {
+      "type": "text",
+      "maxLength": 255
+    },
     "chapter": {
       "type": "relation",
       "relation": "manyToOne",
@@ -23,25 +43,6 @@
       "relation": "oneToMany",
       "target": "api::subtopic.subtopic",
       "mappedBy": "topic"
-    },
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "content": {
-      "type": "richtext",
-      "required": true
-    },
-    "cover": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "summary": {
-      "type": "text",
-      "maxLength": 255
     }
   }
 }
