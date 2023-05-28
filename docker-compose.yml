@@ -1,0 +1,38 @@
+---
+services:
+  cms:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: dev
+    ports:
+      - 1337:1337
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    depends_on:
+      - database
+      - pgadmin
+  database:
+    image: postgres
+    volumes:
+      - data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${DATABASE_USERNAME}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_DB=${DATABASE_NAME}
+  pgadmin:
+    image: dpage/pgadmin4
+    depends_on:
+      - database
+    ports:
+      - 1338:80
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PASSWORD}
+
+volumes:
+  data:
+  pgadmin-data:

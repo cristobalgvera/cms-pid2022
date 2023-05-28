@@ -1,0 +1,12 @@
+FROM node:16 AS installer
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+
+FROM installer AS builder
+RUN npm run build
+
+FROM installer AS dev
+ENV ENV_PATH=./.env.dev
+CMD ["npm", "run", "dev"]
