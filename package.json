@@ -10,6 +10,7 @@
     "strapi": "strapi"
   },
   "devDependencies": {
+    "@strapi/typescript-utils": "^4.10.5",
     "better-sqlite3": "7.6.2"
   },
   "dependencies": {
@@ -28,10 +29,6 @@
   },
   "strapi": {
     "uuid": "4e1fc1db-ae55-40a9-b7f5-2f57b734955c"
-  },
-  "engines": {
-    "node": ">=14.19.1 <=16.x.x",
-    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }
