@@ -1,6 +1,3 @@
-import path from "path";
-import fs from "fs";
-
 export default ({ env }) => ({
   connection: {
     client: "postgres",
