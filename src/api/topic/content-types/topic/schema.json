@@ -17,8 +17,12 @@
       "required": true
     },
     "content": {
-      "type": "richtext",
-      "required": true
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "cover": {
       "type": "media",
